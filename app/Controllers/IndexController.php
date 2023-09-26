@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 
-require_once 'app/controllers/BaseController.php';
+use App\Controllers\BaseController;
 
 class IndexController extends BaseController
 {
