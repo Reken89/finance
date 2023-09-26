@@ -6,7 +6,7 @@ use App\Controllers\BaseController;
 
 class IndexController extends BaseController
 {
-    private $page = "/views/index.php";
+    private $page = "/views/start.php";
     private $data;
     
     public function index()
