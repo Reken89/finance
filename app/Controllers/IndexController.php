@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
+use App\Models\IndexModel;
 
 class IndexController extends BaseController
 {
@@ -12,6 +13,12 @@ class IndexController extends BaseController
     public function index()
     {
         $this->view->render($this->page, $this->data);
+    }
+    
+    public function test()
+    {
+        $test = new IndexModel;
+        var_dump($test->test());
     }
 }
 

@@ -12,5 +12,9 @@ $route = str_replace(".php", "", $route);
 if($route[2] == "index" || $route[2] == ""){
     $route = new IndexController;
     $route->index();
+    
+} elseif ($route[2] == "test") {
+    $route = new IndexController;
+    $route->test();
 }
 
