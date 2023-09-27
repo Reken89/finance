@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use App\Models\BaseModel;
+use App\Models\ReportingModel;
 use PDO;
 
 class IndexModel extends BaseModel
@@ -17,6 +18,14 @@ class IndexModel extends BaseModel
             $res[$row['id']] = $row;
         }
         return $res;
+    }
+    
+    public function block()
+    {
+        $object = new ReportingModel;
+        $expenses = $object->block("expenses", 2023);
+        return $expenses;
+                
     }
     
 }

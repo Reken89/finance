@@ -118,15 +118,15 @@
 			<div class="page-content">
 				<div class="row row-cols-1 row-cols-md-2 row-cols-xl-4">
                    <div class="col">
-					 <div class="card radius-10 border-start border-0 border-3 border-info">
+					 <div class="card radius-10 border-start border-0 border-3 border-success">
 						<div class="card-body">
 							<div class="d-flex align-items-center">
 								<div>
 									<p class="mb-0 text-secondary">Доходы на 01-09-2023г.</p>
-									<h4 class="my-1 text-info">77 475,7 Тыс/Руб</h4>
+									<h4 class="my-1 text-success">77 475,7 Тыс/Руб</h4>
 									<p class="mb-0 font-13">58% от годового плана</p>
 								</div>
-								<div class="widgets-icons-2 rounded-circle bg-gradient-scooter text-white ms-auto">
+								<div class="widgets-icons-2 rounded-circle bg-gradient-ohhappiness text-white ms-auto">
 								</div>
 							</div>
 						</div>
@@ -148,15 +148,15 @@
 					</div>
 				  </div>
 				  <div class="col">
-					<div class="card radius-10 border-start border-0 border-3 border-success">
+					<div class="card radius-10 border-start border-0 border-3 border-info">
 					   <div class="card-body">
 						   <div class="d-flex align-items-center">
 							   <div>
 								   <p class="mb-0 text-secondary">Дефицит/Профицит</p>
-								   <h4 class="my-1 text-success">20 782,3 Тыс/Руб</h4>
+								   <h4 class="my-1 text-info">20 782,3 Тыс/Руб</h4>
 								   <p class="mb-0 font-13">Профицит</p>
 							   </div>
-							   <div class="widgets-icons-2 rounded-circle bg-gradient-ohhappiness text-white ms-auto">
+							   <div class="widgets-icons-2 rounded-circle bg-gradient-scooter text-white ms-auto">
 							   </div>
 						   </div>
 					   </div>

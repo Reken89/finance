@@ -12,6 +12,9 @@ class IndexController extends BaseController
     
     public function index()
     {
+        $object = new IndexModel;
+        $this->data['block'] = $object->block();
+
         $this->view->render($this->page, $this->data);
     }
     
