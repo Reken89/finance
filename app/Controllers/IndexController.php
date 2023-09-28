@@ -14,6 +14,8 @@ class IndexController extends BaseController
     {
         $object = new IndexModel;
         $this->data['block'] = $object->block();
+        
+        //var_dump($this->data['block']);
 
         $this->view->render($this->page, $this->data);
     }

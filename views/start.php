@@ -1,5 +1,21 @@
 <?php
 
+$date = [
+    "0"  => "NULL",
+    "1"  => "на 01-02-2023г.",
+    "2"  => "на 01-03-2023г.",
+    "3"  => "на 01-04-2023г.",
+    "4"  => "на 01-05-2023г.",
+    "5"  => "на 01-06-2023г.",
+    "6"  => "на 01-07-2023г.",
+    "7"  => "на 01-08-2023г.",
+    "8"  => "на 01-09-2023г.",
+    "9"  => "на 01-10-2023г.",
+    "10" => "на 01-11-2023г.",
+    "11" => "на 01-12-2023г.",
+    "12" => "на 01-01-2024г.",
+];
+
 ?>
 
 <!doctype html>
@@ -122,9 +138,9 @@
 						<div class="card-body">
 							<div class="d-flex align-items-center">
 								<div>
-									<p class="mb-0 text-secondary">Доходы на 01-09-2023г.</p>
-									<h4 class="my-1 text-success">77 475,7 Тыс/Руб</h4>
-									<p class="mb-0 font-13">58% от годового плана</p>
+									<p class="mb-0 text-secondary">Доходы на <?php echo $date[$data['block']['income']['mounth']]; ?></p>
+									<h4 class="my-1 text-success"><?php echo number_format($data['block']['income']['income'], 1, ',', ' '); ?> Тыс/Руб</h4>
+									<p class="mb-0 font-13"><?php echo $data['block']['income']['percent'] ?>% от годового плана</p>
 								</div>
 								<div class="widgets-icons-2 rounded-circle bg-gradient-ohhappiness text-white ms-auto">
 								</div>
@@ -137,9 +153,9 @@
 					   <div class="card-body">
 						   <div class="d-flex align-items-center">
 							   <div>
-								   <p class="mb-0 text-secondary">Расходы на 01-09-2023г.</p>
-								   <h4 class="my-1 text-danger">45 458,4 Тыс/Руб</h4>
-								   <p class="mb-0 font-13">28% от годового плана</p>
+								   <p class="mb-0 text-secondary">Расходы на <?php echo $date[$data['block']['expenses']['mounth']]; ?></p>
+								   <h4 class="my-1 text-danger"><?php echo number_format($data['block']['expenses']['expenses'], 1, ',', ' '); ?> Тыс/Руб</h4>
+								   <p class="mb-0 font-13"><?php echo $data['block']['expenses']['percent'] ?>% от годового плана</p>
 							   </div>
 							   <div class="widgets-icons-2 rounded-circle bg-gradient-bloody text-white ms-auto">
 							   </div>
@@ -153,8 +169,8 @@
 						   <div class="d-flex align-items-center">
 							   <div>
 								   <p class="mb-0 text-secondary">Дефицит/Профицит</p>
-								   <h4 class="my-1 text-info">20 782,3 Тыс/Руб</h4>
-								   <p class="mb-0 font-13">Профицит</p>
+								   <h4 class="my-1 text-info"><?php echo number_format($data['block']['three']['three'], 1, ',', ' '); ?> Тыс/Руб</h4>
+                                                                   <p class="mb-0 font-13"><?php if($data['block']['three']['three'] > 0){echo "Профицит";}else{echo "Дефицит";} ?></p>
 							   </div>
 							   <div class="widgets-icons-2 rounded-circle bg-gradient-scooter text-white ms-auto">
 							   </div>
@@ -168,8 +184,8 @@
 						   <div class="d-flex align-items-center">
 							   <div>
 								   <p class="mb-0 text-secondary">Муниципальный долг</p>
-								   <h4 class="my-1 text-warning">14 800,7 Тыс/Руб</h4>
-								   <p class="mb-0 font-13">14% от годового плана</p>
+								   <h4 class="my-1 text-warning">XX Тыс/Руб</h4>
+								   <p class="mb-0 font-13">XX% от годового плана</p>
 							   </div>
 							   <div class="widgets-icons-2 rounded-circle bg-gradient-blooker text-white ms-auto">
 							   </div>
