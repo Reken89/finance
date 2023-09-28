@@ -7,12 +7,12 @@ $(function() {
   var ctx = document.getElementById("chart1").getContext('2d');
    
   var gradientStroke1 = ctx.createLinearGradient(0, 0, 0, 300);
-      gradientStroke1.addColorStop(0, '#6078ea');  
-      gradientStroke1.addColorStop(1, '#17c5ea'); 
+      gradientStroke1.addColorStop(0, '#008000');  
+      gradientStroke1.addColorStop(1, '#32CD32'); 
    
   var gradientStroke2 = ctx.createLinearGradient(0, 0, 0, 300);
-      gradientStroke2.addColorStop(0, '#ff8359');
-      gradientStroke2.addColorStop(1, '#ffdf40');
+      gradientStroke2.addColorStop(0, '#CD5C5C');
+      gradientStroke2.addColorStop(1, '#F08080');
 
       var myChart = new Chart(ctx, {
         type: 'bar',
