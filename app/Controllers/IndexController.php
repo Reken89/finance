@@ -10,20 +10,21 @@ class IndexController extends BaseController
     private $page = "/views/start.php";
     private $data;
     
+    /**
+     * Возвращаем информацию из БД
+     * для отображения на сайте
+     * Возвращаем нужный шаблон для отрисовки стартовой страницы
+     *
+     * @param 
+     * @return render()
+     */
     public function index()
     {
         $object = new IndexModel;
         $this->data['block'] = $object->block();
-        
-        //var_dump($this->data['block']);
 
         $this->view->render($this->page, $this->data);
     }
-    
-    public function test()
-    {
-        $test = new IndexModel;
-        var_dump($test->test());
-    }
+
 }
 

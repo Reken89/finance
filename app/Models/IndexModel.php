@@ -4,22 +4,17 @@ namespace App\Models;
 
 use App\Models\BaseModel;
 use App\Models\ReportingModel;
-use PDO;
 
 class IndexModel extends BaseModel
 {
-    public function test()
-    {
-        $sql = "SELECT * FROM `ekr`";
-        $res = [];
-        $stmt = $this->db->prepare($sql);
-        $stmt->execute();
-        while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-            $res[$row['id']] = $row;
-        }
-        return $res;
-    }
-    
+    /**
+     * Возвращаем массив содержащий информацию
+     * по первому блоку сайта
+     * Доходы, расходы, профицит/дефицит, мун.долг
+     *
+     * @param 
+     * @return array
+     */
     public function block()
     {
         //Получае информацию по расходам.
