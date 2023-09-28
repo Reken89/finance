@@ -22,7 +22,7 @@ class IndexModel extends BaseModel
     
     public function block()
     {
-        //Получае информацию по расходам
+        //Получае информацию по расходам.
         $object = new ReportingModel;
         $expenses = $object->block("expenses", 2023);
         
