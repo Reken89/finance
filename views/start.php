@@ -2,18 +2,18 @@
 
 $date = [
     "0"  => "NULL",
-    "1"  => "на 01-02-2023г.",
-    "2"  => "на 01-03-2023г.",
-    "3"  => "на 01-04-2023г.",
-    "4"  => "на 01-05-2023г.",
-    "5"  => "на 01-06-2023г.",
-    "6"  => "на 01-07-2023г.",
-    "7"  => "на 01-08-2023г.",
-    "8"  => "на 01-09-2023г.",
-    "9"  => "на 01-10-2023г.",
-    "10" => "на 01-11-2023г.",
-    "11" => "на 01-12-2023г.",
-    "12" => "на 01-01-2024г.",
+    "1"  => "01-02-2023г.",
+    "2"  => "01-03-2023г.",
+    "3"  => "01-04-2023г.",
+    "4"  => "01-05-2023г.",
+    "5"  => "01-06-2023г.",
+    "6"  => "01-07-2023г.",
+    "7"  => "01-08-2023г.",
+    "8"  => "01-09-2023г.",
+    "9"  => "01-10-2023г.",
+    "10" => "01-11-2023г.",
+    "11" => "01-12-2023г.",
+    "12" => "01-01-2024г.",
 ];
 
 ?>
@@ -168,7 +168,7 @@ $date = [
 					   <div class="card-body">
 						   <div class="d-flex align-items-center">
 							   <div>
-								   <p class="mb-0 text-secondary">Дефицит/Профицит</p>
+								   <p class="mb-0 text-secondary">Дефицит/Профицит на <?php echo $date[$data['block']['income']['mounth']]; ?></p>
 								   <h4 class="my-1 text-info"><?php echo number_format($data['block']['three']['three'], 1, ',', ' '); ?> Тыс/Руб</h4>
                                                                    <p class="mb-0 font-13"><?php if($data['block']['three']['three'] > 0){echo "Профицит";}else{echo "Дефицит";} ?></p>
 							   </div>
@@ -183,7 +183,7 @@ $date = [
 					   <div class="card-body">
 						   <div class="d-flex align-items-center">
 							   <div>
-								   <p class="mb-0 text-secondary">Муниципальный долг</p>
+								   <p class="mb-0 text-secondary">Муниципальный долг на <?php echo $date[$data['block']['income']['mounth']]; ?></p>
 								   <h4 class="my-1 text-warning">XX Тыс/Руб</h4>
 								   <p class="mb-0 font-13">XX% от годового плана</p>
 							   </div>
