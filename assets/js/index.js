@@ -3,6 +3,30 @@ $(function() {
 
 	
 // chart 1
+  var janr = $('div.hidden').data('janr');
+  var febr = $('div.hidden').data('febr');
+  var marr = $('div.hidden').data('marr');
+  var aprr = $('div.hidden').data('aprr');
+  var mayr = $('div.hidden').data('mayr');
+  var junr = $('div.hidden').data('junr');
+  var julr = $('div.hidden').data('julr');
+  var augr = $('div.hidden').data('augr');
+  var sepr = $('div.hidden').data('sepr');
+  var octr = $('div.hidden').data('octr');
+  var novr = $('div.hidden').data('novr');
+  var decr = $('div.hidden').data('decr');
+  var jand = $('div.hidden').data('jand');
+  var febd = $('div.hidden').data('febd');
+  var mard = $('div.hidden').data('mard');
+  var aprd = $('div.hidden').data('aprd');
+  var mayd = $('div.hidden').data('mayd');
+  var jund = $('div.hidden').data('jund');
+  var juld = $('div.hidden').data('juld');
+  var augd = $('div.hidden').data('augd');
+  var sepd = $('div.hidden').data('sepd');
+  var octd = $('div.hidden').data('octd');
+  var novd = $('div.hidden').data('novd');
+  var decd = $('div.hidden').data('decd');
 
   var ctx = document.getElementById("chart1").getContext('2d');
    
@@ -20,7 +44,7 @@ $(function() {
           labels: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
           datasets: [{
             label: 'Доходы',
-            data: [65, 59, 80, 81,65, 59, 80, 81,59, 80, 81,65],
+            data: [jand, febd, mard, aprd, mayd, jund, juld, augd, sepd, octd, novd, decd],
             borderColor: gradientStroke1,
             backgroundColor: gradientStroke1,
             hoverBackgroundColor: gradientStroke1,
@@ -29,7 +53,7 @@ $(function() {
             borderWidth: 0
           }, {
             label: 'Расходы',
-            data: [28, 48, 40, 19,28, 48, 40, 19,40, 19,28, 48],
+            data: [janr, febr, marr, aprr, mayr, junr, julr, augr, sepr, octr, novr, decr],
             borderColor: gradientStroke2,
             backgroundColor: gradientStroke2,
             hoverBackgroundColor: gradientStroke2,

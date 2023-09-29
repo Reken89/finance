@@ -18,6 +18,35 @@ $date = [
 
 ?>
 
+<!-- Значения для отрисовки диаграммы "Кассовый план" -->
+<div
+    class='hidden'
+    data-janr='<?= $data['diagram']['janr'] ?>'
+    data-febr='<?= $data['diagram']['febr'] ?>'
+    data-marr='<?= $data['diagram']['marr'] ?>'
+    data-aprr='<?= $data['diagram']['aprr'] ?>'
+    data-mayr='<?= $data['diagram']['mayr'] ?>'
+    data-junr='<?= $data['diagram']['junr'] ?>'
+    data-julr='<?= $data['diagram']['julr'] ?>'
+    data-augr='<?= $data['diagram']['augr'] ?>'
+    data-sepr='<?= $data['diagram']['sepr'] ?>'
+    data-octr='<?= $data['diagram']['octr'] ?>'
+    data-novr='<?= $data['diagram']['novr'] ?>'
+    data-decr='<?= $data['diagram']['decr'] ?>'
+    data-jand='<?= $data['diagram']['jand'] ?>'
+    data-febd='<?= $data['diagram']['febd'] ?>'
+    data-mard='<?= $data['diagram']['mard'] ?>'
+    data-aprd='<?= $data['diagram']['aprd'] ?>'
+    data-mayd='<?= $data['diagram']['mayd'] ?>'
+    data-jund='<?= $data['diagram']['jund'] ?>'
+    data-juld='<?= $data['diagram']['juld'] ?>'
+    data-augd='<?= $data['diagram']['augd'] ?>'
+    data-sepd='<?= $data['diagram']['sepd'] ?>'
+    data-octd='<?= $data['diagram']['octd'] ?>'
+    data-novd='<?= $data['diagram']['novd'] ?>'
+    data-decd='<?= $data['diagram']['decd'] ?>'
+></div>
+
 <!doctype html>
 <html lang="en">
 
@@ -201,7 +230,7 @@ $date = [
 						  <div class="card-body">
 							<div class="d-flex align-items-center">
 								<div>
-									<h6 class="mb-0">Кассовое исполнение</h6>
+									<h6 class="mb-0">Кассовое исполнение на <?php echo $date[$data['diagram']['mounth']]; ?></h6>
 								</div>
 								<div class="dropdown ms-auto">
 									<a class="dropdown-toggle dropdown-toggle-nocaret" href="#" data-bs-toggle="dropdown"><i class='bx bx-dots-horizontal-rounded font-22 text-option'></i>

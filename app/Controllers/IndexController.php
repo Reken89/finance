@@ -22,6 +22,7 @@ class IndexController extends BaseController
     {
         $object = new IndexModel;
         $this->data['block'] = $object->block();
+        $this->data['diagram'] = $object->diagram();
 
         $this->view->render($this->page, $this->data);
     }
