@@ -48,10 +48,10 @@ class IndexModel extends BaseModel
         //Формируем информацию для диаграммы
         //Исполнение по доходам и расходам
         $execution = [
-            "approved_d"  => $income['approved'],
-            "fulfilled_d" => $income['fulfilled'],
-            "approved_r"  => $expenses['approved'],
-            "fulfilled_r" => $expenses['fulfilled'],
+            "approved_d"  => round($income['approved'] / 1000, 1),
+            "fulfilled_d" => round($income['fulfilled'] / 1000, 1),
+            "approved_r"  => round($expenses['approved'] / 1000, 1),
+            "fulfilled_r" => round($expenses['fulfilled'] / 1000, 1),
         ];
 
         
