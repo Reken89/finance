@@ -86,61 +86,7 @@ $(function() {
 	 
 // chart 2
 
- var ctx = document.getElementById("chart2").getContext('2d');
 
-  var gradientStroke1 = ctx.createLinearGradient(0, 0, 0, 300);
-      gradientStroke1.addColorStop(0, '#fc4a1a');
-      gradientStroke1.addColorStop(1, '#f7b733');
-
-  var gradientStroke2 = ctx.createLinearGradient(0, 0, 0, 300);
-      gradientStroke2.addColorStop(0, '#4776e6');
-      gradientStroke2.addColorStop(1, '#8e54e9');
-
-
-  var gradientStroke3 = ctx.createLinearGradient(0, 0, 0, 300);
-      gradientStroke3.addColorStop(0, '#ee0979');
-      gradientStroke3.addColorStop(1, '#ff6a00');
-	  
-	var gradientStroke4 = ctx.createLinearGradient(0, 0, 0, 300);
-      gradientStroke4.addColorStop(0, '#42e695');
-      gradientStroke4.addColorStop(1, '#3bb2b8');
-
-      var myChart = new Chart(ctx, {
-        type: 'doughnut',
-        data: {
-          labels: ["Показатель №1", "Показатель №2", "Показатель №3", "Показатель №4"],
-          datasets: [{
-            backgroundColor: [
-              gradientStroke1,
-              gradientStroke2,
-              gradientStroke3,
-              gradientStroke4
-            ],
-            hoverBackgroundColor: [
-              gradientStroke1,
-              gradientStroke2,
-              gradientStroke3,
-              gradientStroke4
-            ],
-            data: [25, 80, 25, 25],
-			borderWidth: [1, 1, 1, 1]
-          }]
-        },
-        options: {
-			maintainAspectRatio: false,
-			cutoutPercentage: 75,
-            legend: {
-			  position: 'bottom',
-              display: false,
-			  labels: {
-                boxWidth:8
-              }
-            },
-			tooltips: {
-			  displayColors:false,
-			}
-        }
-      });
 
    
 
@@ -347,12 +293,12 @@ var fulfilledr = $('div.hidden').data('fulfilledr');
   var ctx = document.getElementById("chart6").getContext('2d');
    
   var gradientStroke1 = ctx.createLinearGradient(0, 0, 0, 300);
-      gradientStroke1.addColorStop(0, '#2F4F4F');  
-      gradientStroke1.addColorStop(1, '#2F4F4F'); 
+      gradientStroke1.addColorStop(0, '#00008B');  
+      gradientStroke1.addColorStop(1, '#0000CD'); 
    
   var gradientStroke2 = ctx.createLinearGradient(0, 0, 0, 300);
-      gradientStroke2.addColorStop(0, '#708090');
-      gradientStroke2.addColorStop(1, '#778899');
+      gradientStroke2.addColorStop(0, '#800080');
+      gradientStroke2.addColorStop(1, '#FF00FF');
 
       var myChart = new Chart(ctx, {
         type: 'bar',
