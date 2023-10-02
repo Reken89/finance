@@ -45,6 +45,11 @@ $date = [
     data-octd='<?= $data['diagram']['octd'] ?>'
     data-novd='<?= $data['diagram']['novd'] ?>'
     data-decd='<?= $data['diagram']['decd'] ?>'
+    
+    data-approvedd='<?= $data['block']['execution']['approved_d'] ?>'
+    data-fulfilledd='<?= $data['block']['execution']['fulfilled_d'] ?>'
+    data-approvedr='<?= $data['block']['execution']['approved_r'] ?>'
+    data-fulfilledr='<?= $data['block']['execution']['fulfilled_r'] ?>'
 ></div>
 
 <!doctype html>
@@ -230,7 +235,7 @@ $date = [
 						  <div class="card-body">
 							<div class="d-flex align-items-center">
 								<div>
-									<h6 class="mb-0">Кассовое исполнение на <?php echo $date[$data['diagram']['mounth']]; ?></h6>
+									<h6 class="mb-0">Кассовый план на <?php echo $date[$data['diagram']['mounth']]; ?></h6>
 								</div>
 								<div class="dropdown ms-auto">
 									<a class="dropdown-toggle dropdown-toggle-nocaret" href="#" data-bs-toggle="dropdown"><i class='bx bx-dots-horizontal-rounded font-22 text-option'></i>
@@ -318,6 +323,28 @@ $date = [
 					   </div>
 				   </div>
 				</div><!--end row-->
+                                
+                                <div class="row">
+                                    <div class="col-12 col-lg-4">
+                      <div class="card radius-10">
+						  <div class="card-body">
+							<div class="d-flex align-items-center">
+								<div>
+									<h6 class="mb-0">Исполнение по доходам и расходам на <?php echo $date[$data['block']['income']['mounth']]; ?></h6>
+								</div>
+								
+							</div>
+							<div class="d-flex align-items-center ms-auto font-13 gap-2 my-3">
+								<span class="border px-1 rounded cursor-pointer"><i class="bx bxs-circle me-1" style="color: #2F4F4F"></i>Утверждено</span>
+								<span class="border px-1 rounded cursor-pointer"><i class="bx bxs-circle me-1" style="color: #708090"></i>Исполнено</span>
+							</div>
+							<div class="chart-container-1">
+								<canvas id="chart6"></canvas>
+							  </div>
+						  </div>
+					  </div>
+				   </div>
+                                </div><!--end row-->
 
 				 <div class="card radius-10">
                          <div class="card-body">

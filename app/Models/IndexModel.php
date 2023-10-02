@@ -45,11 +45,22 @@ class IndexModel extends BaseModel
             "three" => round(($income['fulfilled'] - $expenses['fulfilled']) / 1000, 1)
         ];
         
+        //Формируем информацию для диаграммы
+        //Исполнение по доходам и расходам
+        $execution = [
+            "approved_d"  => $income['approved'],
+            "fulfilled_d" => $income['fulfilled'],
+            "approved_r"  => $expenses['approved'],
+            "fulfilled_r" => $expenses['fulfilled'],
+        ];
+
+        
         //Собираем массив с нужной информацией
         $block = [
-            "expenses" => $expen,
-            "income"   => $inc,
-            "three"    => $three,
+            "expenses"  => $expen,
+            "income"    => $inc,
+            "three"     => $three,
+            "execution" => $execution,
         ];
         
         return $block;

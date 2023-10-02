@@ -338,7 +338,66 @@ var ctx = document.getElementById("chart4").getContext('2d');
 		}
       });
 
+// chart 6
+var approvedd = $('div.hidden').data('approvedd');
+var fulfilledd = $('div.hidden').data('fulfilledd');
+var approvedr = $('div.hidden').data('approvedr');
+var fulfilledr = $('div.hidden').data('fulfilledr');
 
+  var ctx = document.getElementById("chart6").getContext('2d');
+   
+  var gradientStroke1 = ctx.createLinearGradient(0, 0, 0, 300);
+      gradientStroke1.addColorStop(0, '#2F4F4F');  
+      gradientStroke1.addColorStop(1, '#2F4F4F'); 
+   
+  var gradientStroke2 = ctx.createLinearGradient(0, 0, 0, 300);
+      gradientStroke2.addColorStop(0, '#708090');
+      gradientStroke2.addColorStop(1, '#778899');
+
+      var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: ['Доходы', 'Расходы'],
+          datasets: [{
+            label: 'Доходы',
+            data: [approvedd, approvedr, 0],
+            borderColor: gradientStroke1,
+            backgroundColor: gradientStroke1,
+            hoverBackgroundColor: gradientStroke1,
+            pointRadius: 0,
+            fill: false,
+            borderWidth: 0
+          }, {
+            label: 'Расходы',
+            data: [fulfilledd, fulfilledr, 0],
+            borderColor: gradientStroke2,
+            backgroundColor: gradientStroke2,
+            hoverBackgroundColor: gradientStroke2,
+            pointRadius: 0,
+            fill: false,
+            borderWidth: 0
+          }]
+        },
+		
+		options:{
+		  maintainAspectRatio: false,
+		  legend: {
+			  position: 'bottom',
+              display: false,
+			  labels: {
+                boxWidth:8
+              }
+            },
+			tooltips: {
+			  displayColors:false,
+			},	
+		  scales: {
+			  xAxes: [{
+				barPercentage: .5
+			  }]
+		     }
+		}
+      });
 
 
    });	 
