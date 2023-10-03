@@ -58,6 +58,11 @@ $date = [
     data-d202202='<?= $data['dynamicd']['result202202'] ?>'
     data-d202301='<?= $data['dynamicd']['result202301'] ?>'
     data-d202302='<?= $data['dynamicd']['result202302'] ?>'
+    
+    data-r2020='<?= $data['dynamicr']['result2020'] ?>'
+    data-r2021='<?= $data['dynamicr']['result2021'] ?>'
+    data-r2022='<?= $data['dynamicr']['result2022'] ?>'
+    data-r2023='<?= $data['dynamicr']['result2023'] ?>'
 ></div>
 
 <!doctype html>
@@ -285,6 +290,14 @@ $date = [
                                         <div class="card radius-10">
                                             <div class="card-body">
                                                 <div id="chart15"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-12 col-lg-6">
+                                        <div class="card radius-10">
+                                            <div class="card-body">
+                                                <div id="chart16"></div>
                                             </div>
                                         </div>
                                     </div>

@@ -155,6 +155,19 @@ class IndexModel extends BaseModel
             return $result;
             
         }else{
+            $object = new ReportingModel;
+            $result2020 = $object->block("$meaning", 2020, "no");
+            $result2021 = $object->block("$meaning", 2021, "no");
+            $result2022 = $object->block("$meaning", 2022, "no");
+            $result2023 = $object->block("$meaning", 2023, "no");
+            
+            $result = [
+                "result2020" => round($result2020['fulfilled'] / 1000, 1),
+                "result2021" => round($result2021['fulfilled'] / 1000, 1),
+                "result2022" => round($result2022['fulfilled'] / 1000, 1),
+                "result2023" => round($result2023['approved'] / 1000, 1),
+            ];
+            return $result;
             
         }
 

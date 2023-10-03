@@ -305,7 +305,7 @@ var fulfilledr = $('div.hidden').data('fulfilledr');
         data: {
           labels: ['Доходы', 'Расходы'],
           datasets: [{
-            label: 'Доходы',
+            label: '',
             data: [approvedd, approvedr, 0],
             borderColor: gradientStroke1,
             backgroundColor: gradientStroke1,
@@ -314,7 +314,7 @@ var fulfilledr = $('div.hidden').data('fulfilledr');
             fill: false,
             borderWidth: 0
           }, {
-            label: 'Расходы',
+            label: '',
             data: [fulfilledd, fulfilledr, 0],
             borderColor: gradientStroke2,
             backgroundColor: gradientStroke2,
@@ -405,7 +405,7 @@ var fulfilledr = $('div.hidden').data('fulfilledr');
                     column: {
                             stacking: 'normal',
                             dataLabels: {
-                                    enabled: true
+                                    //enabled: true
                             }
                     }
             },
@@ -418,6 +418,74 @@ var fulfilledr = $('div.hidden').data('fulfilledr');
                     name: 'Налоговые и неналоговые',
                     data: [d202001, d202101, d202201, d202301],
                     color: '#00FF00'
+            }]
+                                         
+	});
+
+// chart 16  
+    var r2020 = $('div.hidden').data('r2020');
+    var r2021 = $('div.hidden').data('r2021');
+    var r2022 = $('div.hidden').data('r2022');
+    var r2023 = $('div.hidden').data('r2023');
+    
+	Highcharts.chart('chart16', {  
+                         
+            chart: {
+                type: 'column'
+                //styledMode: true
+            },
+            credits: {
+                    enabled: false
+            },
+            title: {
+                    text: 'Динамика расходов бюджета'
+            },
+            xAxis: {
+                    categories: ['2020', '2021', '2022', '2023']
+            },
+            yAxis: {
+                    min: 0,
+                    title: {
+                        text: ''
+                    },
+                    stackLabels: {
+                            enabled: true,
+                            style: {
+                                fontWeight: 'bold',
+                                color: ( // theme
+                                     Highcharts.defaultOptions.title.style && Highcharts.defaultOptions.title.style.color) || 'gray'
+
+                            }
+                    }
+            },
+            legend: {
+                    align: 'right',
+                    x: -30,
+                    verticalAlign: 'top',
+                    y: 25,
+                    floating: true,
+                    backgroundColor: Highcharts.defaultOptions.legend.backgroundColor || 'white',
+                    borderColor: '#CCC',
+                    borderWidth: 1,
+                    shadow: false
+            },
+            tooltip: {
+                    headerFormat: '<b>{point.x}</b><br/>',
+                    //pointFormat: '{series.name}: {point.y}<br/>Итого: {point.stackTotal}'
+            },
+            plotOptions: {
+                    column: {
+                            stacking: 'normal',
+                            dataLabels: {
+                                    //enabled: true
+                            }
+                    }
+            },
+            colors: ['#CD5C5C'],
+            series: [{
+                name: 'Всего',
+                data: [r2020, r2021, r2022, r2023],
+                color: '#CD5C5C'
             }]
                                          
 	});

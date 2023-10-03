@@ -24,6 +24,7 @@ class IndexController extends BaseController
         $this->data['block'] = $object->block();
         $this->data['diagram'] = $object->diagram();
         $this->data['dynamicd'] = $object->dynamics("income"); //Доходы
+        $this->data['dynamicr'] = $object->dynamics("expenses"); //Расходы
 
         $this->view->render($this->page, $this->data);
     }
