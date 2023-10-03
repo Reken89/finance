@@ -138,31 +138,29 @@ $date = [
 					<li class="nav-item dropdown">
 					  <a href="javascript:;" class="nav-link dropdown-toggle dropdown-toggle-nocaret" data-bs-toggle="dropdown">
 
-						<div class="menu-title">Вкладка №1</div>
+						<div class="menu-title">Основные параметры бюджета</div>
 					</a>
 					<ul class="dropdown-menu">
-						<li> <a class="dropdown-item" href="#"><i class="bx bx-right-arrow-alt"></i>Ссылка №1</a>
+						<li> <a class="dropdown-item" href="#"><i class="bx bx-right-arrow-alt"></i>Доходы</a>
 						</li>
-						<li> <a class="dropdown-item" href="#"><i class="bx bx-right-arrow-alt"></i>Ссылка №2</a>
+						<li> <a class="dropdown-item" href="#"><i class="bx bx-right-arrow-alt"></i>Расходы</a>
 						</li>
-						<li> <a class="dropdown-item" href="#"><i class="bx bx-right-arrow-alt"></i>Ссылка №3</a>
+						<li> <a class="dropdown-item" href="#"><i class="bx bx-right-arrow-alt"></i>Муниципальный долг</a>
+						</li>
+                                                <li> <a class="dropdown-item" href="#"><i class="bx bx-right-arrow-alt"></i>Обслуживание муниципального долга</a>
 						</li>
 					  </ul>
 					</li>
 					<li class="nav-item dropdown">
 						<a href="javascript:;" class="nav-link dropdown-toggle dropdown-toggle-nocaret" data-bs-toggle="dropdown">
 
-						<div class="menu-title">Вкладка №2</div>
+						<div class="menu-title">Решение о бюджете</div>
 					  </a>
 					  <ul class="dropdown-menu">
-						<li> <a class="dropdown-item" href="#"><i class="bx bx-right-arrow-alt"></i>Ссылка №1</a>
+						<li> <a class="dropdown-item" href="#"><i class="bx bx-right-arrow-alt"></i>Проект Решение о бюджете</a>
 						</li>
-						<li> <a class="dropdown-item" href="#"><i class="bx bx-right-arrow-alt"></i>Ссылка №2</a>
-						</li>
-						<li> <a class="dropdown-item" href="#"><i class="bx bx-right-arrow-alt"></i>Ссылка №3</a>
-						</li>
-						<li> <a class="dropdown-item" href="#"><i class="bx bx-right-arrow-alt"></i>Ссылка №4</a>
-						</li>
+						<li> <a class="dropdown-item" href="#"><i class="bx bx-right-arrow-alt"></i>Решение о бюджете</a>
+						</li>						
 						</ul>
 					  </li>
 					  <li class="nav-item">
