@@ -49,6 +49,15 @@ $date = [
     data-fulfilledd='<?= $data['block']['execution']['fulfilled_d'] ?>'
     data-approvedr='<?= $data['block']['execution']['approved_r'] ?>'
     data-fulfilledr='<?= $data['block']['execution']['fulfilled_r'] ?>'
+    
+    data-d202001='<?= $data['dynamicd']['result202001'] ?>'
+    data-d202002='<?= $data['dynamicd']['result202002'] ?>'
+    data-d202101='<?= $data['dynamicd']['result202101'] ?>'
+    data-d202102='<?= $data['dynamicd']['result202102'] ?>'
+    data-d202201='<?= $data['dynamicd']['result202201'] ?>'
+    data-d202202='<?= $data['dynamicd']['result202202'] ?>'
+    data-d202301='<?= $data['dynamicd']['result202301'] ?>'
+    data-d202302='<?= $data['dynamicd']['result202302'] ?>'
 ></div>
 
 <!doctype html>

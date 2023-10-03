@@ -20,7 +20,7 @@ class IndexModel extends BaseModel
     {
         //Получае информацию по расходам.
         $object = new ReportingModel;
-        $expenses = $object->block("expenses", 2023);
+        $expenses = $object->block("expenses", 2023, "no");
         
         //Преобразовываем расходы
         $expen = [
@@ -31,7 +31,7 @@ class IndexModel extends BaseModel
         
         //Получае информацию по доходам
         $object2 = new ReportingModel;
-        $income = $object2->block("income", 2023);
+        $income = $object2->block("income", 2023, "no");
         
         //Преобразовываем доходы
         $inc = [
@@ -117,6 +117,47 @@ class IndexModel extends BaseModel
         ];
         
         return $diagram;
+        
+    }
+    
+    /**
+     * Возвращаем массив содержащий информацию
+     * по диаграмме сайта
+     * Динамика доходов и расходов
+     *
+     * @param string $meaning
+     * @return array
+     */
+    public function dynamics(string $meaning)
+    {
+        //Получае информацию
+        if($meaning == "income"){
+            $object = new ReportingModel;
+            $result202001 = $object->block("$meaning", 2020, "00010000000000000000");
+            $result202002 = $object->block("$meaning", 2020, "00020000000000000000");
+            $result202101 = $object->block("$meaning", 2021, "00010000000000000000");
+            $result202102 = $object->block("$meaning", 2021, "00020000000000000000");
+            $result202201 = $object->block("$meaning", 2022, "00010000000000000000");
+            $result202202 = $object->block("$meaning", 2022, "00020000000000000000");
+            $result202301 = $object->block("$meaning", 2023, "00010000000000000000");
+            $result202302 = $object->block("$meaning", 2023, "00020000000000000000");
+            
+            $result = [
+                "result202001" => round($result202001['fulfilled'] / 1000, 1),
+                "result202002" => round($result202002['fulfilled'] / 1000, 1),
+                "result202101" => round($result202101['fulfilled'] / 1000, 1),
+                "result202102" => round($result202102['fulfilled'] / 1000, 1),
+                "result202201" => round($result202201['fulfilled'] / 1000, 1),
+                "result202202" => round($result202202['fulfilled'] / 1000, 1),
+                "result202301" => round($result202301['approved'] / 1000, 1),
+                "result202302" => round($result202302['approved'] / 1000, 1),
+            ];
+            return $result;
+            
+        }else{
+            
+        }
+
         
     }
     

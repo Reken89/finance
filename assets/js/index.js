@@ -346,7 +346,16 @@ var fulfilledr = $('div.hidden').data('fulfilledr');
       });
      
      
-     // chart 15       
+     // chart 15    
+     var d202001 = $('div.hidden').data('d202001');
+     var d202002 = $('div.hidden').data('d202002');
+     var d202101 = $('div.hidden').data('d202101');
+     var d202102 = $('div.hidden').data('d202102');
+     var d202201 = $('div.hidden').data('d202201');
+     var d202202 = $('div.hidden').data('d202202');
+     var d202301 = $('div.hidden').data('d202301');
+     var d202302 = $('div.hidden').data('d202302');
+     
 	Highcharts.chart('chart15', {  
                          
             chart: {
@@ -402,12 +411,12 @@ var fulfilledr = $('div.hidden').data('fulfilledr');
             },
             colors: ['#006400', '#00FF00'],
             series: [{
-                    name: '0002',
-                    data: [2, 2, 3, 2],
+                    name: 'Безвозмездные поступления',
+                    data: [d202002, d202102, d202202, d202302],
                     color: '#006400'
             }, {
-                    name: '0001',
-                    data: [3, 4, 4, 2],
+                    name: 'Налоговые и неналоговые',
+                    data: [d202001, d202101, d202201, d202301],
                     color: '#00FF00'
             }]
                                          

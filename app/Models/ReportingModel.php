@@ -15,11 +15,11 @@ class ReportingModel extends BaseModel
      * @param string $meaning, int $year
      * @return array
      */
-    public function block(string $meaning, int $year)
+    public function block(string $meaning, int $year, string $kbk)
     {
         
         $sql = "SELECT id, mounth, approved, fulfilled FROM reporting "
-            . "WHERE meaning = '$meaning' AND year = '$year' AND kbk = 'no' "
+            . "WHERE meaning = '$meaning' AND year = '$year' AND kbk = '$kbk' "
             . "ORDER BY mounth DESC LIMIT 1";
         
         $stmt = $this->db->prepare($sql);
@@ -27,6 +27,6 @@ class ReportingModel extends BaseModel
         $row = $stmt->fetch(PDO::FETCH_ASSOC);
         return $row;
 
-    }
+    }    
 }
 

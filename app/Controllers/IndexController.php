@@ -23,6 +23,7 @@ class IndexController extends BaseController
         $object = new IndexModel;
         $this->data['block'] = $object->block();
         $this->data['diagram'] = $object->diagram();
+        $this->data['dynamicd'] = $object->dynamics("income"); //Доходы
 
         $this->view->render($this->page, $this->data);
     }
