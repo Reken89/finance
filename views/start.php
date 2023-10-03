@@ -65,6 +65,7 @@ $date = [
 	<link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
 	<link href="assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" />
 	<link href="assets/plugins/metismenu/css/metisMenu.min.css" rel="stylesheet" />
+        <link href="assets/plugins/highcharts/css/highcharts.css" rel="stylesheet" />
 	<!-- loader-->
 	<link href="assets/css/pace.min.css" rel="stylesheet" />
 	<script src="assets/js/pace.min.js"></script>
@@ -271,7 +272,13 @@ $date = [
 				</div><!--end row-->
                                 
                                 <div class="row">
-                                   
+                                    <div class="col-12 col-lg-6">
+                                        <div class="card radius-10">
+                                            <div class="card-body">
+                                                <div id="chart15"></div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div><!--end row-->
 
 				 <div class="card radius-10">
@@ -708,7 +715,11 @@ $date = [
 	<script src="assets/plugins/vectormap/jquery-jvectormap-2.0.2.min.js"></script>
     <script src="assets/plugins/vectormap/jquery-jvectormap-world-mill-en.js"></script>
 	<script src="assets/plugins/chartjs/js/Chart.min.js"></script>
-	<script src="assets/plugins/chartjs/js/Chart.extension.js"></script>
+	<script src="assets/plugins/chartjs/js/Chart.extension.js"></script>        
+        <!-- highcharts js -->
+	<script src="assets/plugins/highcharts/js/highcharts.js"></script>
+
+       
 	<script src="assets/js/index.js"></script>
 	<!--app JS-->
 	<script src="assets/js/app.js"></script>

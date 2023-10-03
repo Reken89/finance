@@ -344,6 +344,74 @@ var fulfilledr = $('div.hidden').data('fulfilledr');
 		     }
 		}
       });
+     
+     
+     // chart 15       
+	Highcharts.chart('chart15', {  
+                         
+            chart: {
+                type: 'column'
+                //styledMode: true
+            },
+            credits: {
+                    enabled: false
+            },
+            title: {
+                    text: 'Динамика доходов бюджета'
+            },
+            xAxis: {
+                    categories: ['2020', '2021', '2022', '2023']
+            },
+            yAxis: {
+                    min: 0,
+                    title: {
+                        text: ''
+                    },
+                    stackLabels: {
+                            enabled: true,
+                            style: {
+                                fontWeight: 'bold',
+                                color: ( // theme
+                                     Highcharts.defaultOptions.title.style && Highcharts.defaultOptions.title.style.color) || 'gray'
+
+                            }
+                    }
+            },
+            legend: {
+                    align: 'right',
+                    x: -30,
+                    verticalAlign: 'top',
+                    y: 25,
+                    floating: true,
+                    backgroundColor: Highcharts.defaultOptions.legend.backgroundColor || 'white',
+                    borderColor: '#CCC',
+                    borderWidth: 1,
+                    shadow: false
+            },
+            tooltip: {
+                    headerFormat: '<b>{point.x}</b><br/>',
+                    pointFormat: '{series.name}: {point.y}<br/>Итого: {point.stackTotal}'
+            },
+            plotOptions: {
+                    column: {
+                            stacking: 'normal',
+                            dataLabels: {
+                                    enabled: true
+                            }
+                    }
+            },
+            colors: ['#006400', '#00FF00'],
+            series: [{
+                    name: '0002',
+                    data: [2, 2, 3, 2],
+                    color: '#006400'
+            }, {
+                    name: '0001',
+                    data: [3, 4, 4, 2],
+                    color: '#00FF00'
+            }]
+                                         
+	});
 
 
    });	 
