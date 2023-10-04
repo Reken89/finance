@@ -21,23 +21,9 @@
                             <div class="card-header bg-transparent">
                                 <div class="d-flex align-items-center">
                                     <div>
-                                        <h6 class="mb-0">Orders Summary</h6>
+                                        <h6 class="mb-0">Доходы бюджета</h6>
                                     </div>
-                                    <div class="dropdown ms-auto">
-                                        <a class="dropdown-toggle dropdown-toggle-nocaret" href="#" data-bs-toggle="dropdown"><i class='bx bx-dots-horizontal-rounded font-22 text-option'></i>
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="javascript:;">Action</a>
-                                            </li>
-                                            <li><a class="dropdown-item" href="javascript:;">Another action</a>
-                                            </li>
-                                            <li>
-                                                <hr class="dropdown-divider">
-                                            </li>
-                                            <li><a class="dropdown-item" href="javascript:;">Something else here</a>
-                                            </li>
-                                        </ul>
-                                    </div>
+                                    
                                 </div>
                             </div>
                                 <div class="card-body">
@@ -46,13 +32,30 @@
                                           </div>
                                 </div>
                                 <ul class="list-group list-group-flush">
-                                        <li class="list-group-item d-flex bg-transparent justify-content-between align-items-center">Completed <span class="badge bg-gradient-quepal rounded-pill">25</span>
+                                        <li class="list-group-item d-flex bg-transparent justify-content-between align-items-center">Налоговые и неналоговые <span class="badge bg-gradient-quepal rounded-pill">25</span>
                                         </li>
-                                        <li class="list-group-item d-flex bg-transparent justify-content-between align-items-center">Pending <span class="badge bg-gradient-ibiza rounded-pill">10</span>
+                                        <li class="list-group-item d-flex bg-transparent justify-content-between align-items-center">Безвозмездные поступления <span class="badge bg-gradient-ibiza rounded-pill">10</span>
                                         </li>
-                                        <li class="list-group-item d-flex bg-transparent justify-content-between align-items-center">Process <span class="badge bg-gradient-deepblue rounded-pill">65</span>
-                                        </li>
+                                     
                                 </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-4">
+                        <div class="card radius-10 w-100">
+                            <div class="card-header bg-transparent">
+                                <div class="d-flex align-items-center">
+                                    <div>
+                                        <h6 class="mb-0">Структура доходов</h6>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                                <div class="card-body">
+                                        <div class="chart-container-1">
+                                                <canvas id="chart21"></canvas>
+                                          </div>
+                                </div>                               
                         </div>
                     </div>
                 </div>
