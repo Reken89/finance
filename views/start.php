@@ -73,7 +73,7 @@ $date = [
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--favicon-->
-	<link rel="icon" href="assets/images/favicon-32x32.png" type="image/png" />
+	
 	<!--plugins-->
 	<link href="assets/plugins/vectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet"/>
 	<link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
@@ -106,9 +106,7 @@ $date = [
 			<div class="topbar d-flex align-items-center">
 				<nav class="navbar navbar-expand">
 					<div class="topbar-logo-header">
-						<div class="">
-							<img src="assets/images/logo-icon.png" class="logo-icon" alt="logo icon">
-						</div>
+						
 						<div class="">
 							<h4 class="logo-text">Бюджет для граждан</h4>
 						</div>
