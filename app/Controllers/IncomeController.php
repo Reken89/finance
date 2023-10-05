@@ -23,6 +23,7 @@ class IncomeController extends BaseController
     {
         $object = new IncomeModel;
         $this->data['diagramone'] = $object->diagram("one");
+        $this->data['diagramtwo'] = $object->diagram("two");
 
         $this->view->render($this->page, $this->data);
     }

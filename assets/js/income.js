@@ -53,6 +53,36 @@ var myChart = new Chart(ctx, {
 });
 
 // chart 21
+var title001 = $('div.hidden').data('title001');
+var title002 = $('div.hidden').data('title002');
+var title003 = $('div.hidden').data('title003');
+var title004 = $('div.hidden').data('title004');
+var title005 = $('div.hidden').data('title005');
+var title006 = $('div.hidden').data('title006');
+var title007 = $('div.hidden').data('title007');
+var title008 = $('div.hidden').data('title008');
+var title009 = $('div.hidden').data('title009');
+var title010 = $('div.hidden').data('title010');
+var title011 = $('div.hidden').data('title011');
+var title012 = $('div.hidden').data('title012');
+var title013 = $('div.hidden').data('title013');
+var title014 = $('div.hidden').data('title014');
+
+var fulfilled001 = $('div.hidden').data('fulfilled001');
+var fulfilled002 = $('div.hidden').data('fulfilled002');
+var fulfilled003 = $('div.hidden').data('fulfilled003');
+var fulfilled004 = $('div.hidden').data('fulfilled004');
+var fulfilled005 = $('div.hidden').data('fulfilled005');
+var fulfilled006 = $('div.hidden').data('fulfilled006');
+var fulfilled007 = $('div.hidden').data('fulfilled007');
+var fulfilled008 = $('div.hidden').data('fulfilled008');
+var fulfilled009 = $('div.hidden').data('fulfilled009');
+var fulfilled010 = $('div.hidden').data('fulfilled010');
+var fulfilled011 = $('div.hidden').data('fulfilled011');
+var fulfilled012 = $('div.hidden').data('fulfilled012');
+var fulfilled013 = $('div.hidden').data('fulfilled013');
+var fulfilled014 = $('div.hidden').data('fulfilled014');
+
 var ctx = document.getElementById("chart21").getContext('2d');
 
 var gradientStroke1 = ctx.createLinearGradient(0, 0, 0, 300);
@@ -110,26 +140,14 @@ var gradientStroke13 = ctx.createLinearGradient(0, 0, 0, 300);
 var gradientStroke14 = ctx.createLinearGradient(0, 0, 0, 300);
     gradientStroke14.addColorStop(0, '#006400');
     gradientStroke14.addColorStop(1, '#228B22'); 
-    
-var gradientStroke15 = ctx.createLinearGradient(0, 0, 0, 300);
-    gradientStroke15.addColorStop(0, '#CD5C5C');
-    gradientStroke15.addColorStop(1, '#F08080');    
-    
-var gradientStroke16 = ctx.createLinearGradient(0, 0, 0, 300);
-    gradientStroke16.addColorStop(0, '#00FA9A');
-    gradientStroke16.addColorStop(1, '#00FF7F');  
-    
-var gradientStroke17 = ctx.createLinearGradient(0, 0, 0, 300);
-    gradientStroke17.addColorStop(0, '#6B8E23');
-    gradientStroke17.addColorStop(1, '#9ACD32');     
-
+      
 var myChart = new Chart(ctx, {
     type: 'pie',
     data: {
-        labels: ["Первый", "Второй", "Третий", "Четвертый", "Пятый", 
-            "Шестой", "Седьмой", "Восьмой", "Девятый", "Десятый", 
-            "Одинадцатый", "Двенадцатый", "Тринадцатый", "Четырнадцатый", 
-            "Пятнадцатый", "Шестнадцатый", "Семнадцатый"],
+        labels: [title001, title002, title003, title004, title005, 
+            title006, title007, title008, title009, title010, 
+            title011, title012, title013, title014 
+            ],
         
         datasets: [{
             backgroundColor: [
@@ -146,10 +164,7 @@ var myChart = new Chart(ctx, {
                 gradientStroke11,
                 gradientStroke12,
                 gradientStroke13,
-                gradientStroke14,
-                gradientStroke15,
-                gradientStroke16,
-                gradientStroke17
+                gradientStroke14
             ],
 
             hoverBackgroundColor: [
@@ -166,14 +181,13 @@ var myChart = new Chart(ctx, {
                 gradientStroke11,
                 gradientStroke12,
                 gradientStroke13,
-                gradientStroke14,
-                gradientStroke15,
-                gradientStroke16,
-                gradientStroke17
+                gradientStroke14
             ],
 
-            data: [50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50],
-            borderWidth: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+            data: [fulfilled001, fulfilled002, fulfilled003, fulfilled004, fulfilled005, 
+                fulfilled006, fulfilled007, fulfilled008, fulfilled009, fulfilled010, 
+                fulfilled011, fulfilled012, fulfilled013, fulfilled014],
+            borderWidth: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
         }]
     },
     options: {

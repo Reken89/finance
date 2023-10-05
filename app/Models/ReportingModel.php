@@ -43,6 +43,7 @@ class ReportingModel extends BaseModel
         while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
             $row['fulfilled'] = round($row['fulfilled'] / 1000, 1);
             $row['title'] = mb_strtolower($row['title']);
+            $row['title'] = mb_strimwidth($row['title'], 0, 65, '...');
             $res[$row['kbk']] = $row;
         }
         //$row = $stmt->fetch(PDO::FETCH_ASSOC);
