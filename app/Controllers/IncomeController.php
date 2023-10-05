@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
+use App\Models\IncomeModel;
 
 class IncomeController extends BaseController
 {
@@ -20,7 +21,8 @@ class IncomeController extends BaseController
      */
     public function index()
     {
-        $this->data = [];
+        $object = new IncomeModel;
+        $this->data['diagramone'] = $object->diagram("one");
 
         $this->view->render($this->page, $this->data);
     }

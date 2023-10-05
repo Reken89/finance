@@ -1,3 +1,13 @@
+<?php
+    var_dump($data);
+?>
+<div
+    class='hidden'   
+    data-title01='<?= $data['diagramone']['00010000000000000000']['title'] ?>'
+    data-title02='<?= $data['diagramone']['00020000000000000000']['title'] ?>'
+    data-fulfilled01='<?= $data['diagramone']['00010000000000000000']['fulfilled'] ?>'
+    data-fulfilled02='<?= $data['diagramone']['00020000000000000000']['fulfilled'] ?>'
+></div>
 <!doctype html>
 <html lang="en">
 
@@ -32,9 +42,9 @@
                                           </div>
                                 </div>
                                 <ul class="list-group list-group-flush">
-                                        <li class="list-group-item d-flex bg-transparent justify-content-between align-items-center">Налоговые и неналоговые <span class="badge bg-gradient-quepal rounded-pill">25</span>
+                                        <li class="list-group-item d-flex bg-transparent justify-content-between align-items-center">Налоговые и неналоговые <span class="badge bg-gradient-quepal rounded-pill"><?php echo number_format($data['diagramone']['00010000000000000000']['fulfilled'], 1, ',', ' '); ?></span>
                                         </li>
-                                        <li class="list-group-item d-flex bg-transparent justify-content-between align-items-center">Безвозмездные поступления <span class="badge bg-gradient-ibiza rounded-pill">10</span>
+                                        <li class="list-group-item d-flex bg-transparent justify-content-between align-items-center">Безвозмездные поступления <span class="badge bg-gradient-ibiza rounded-pill"><?php echo number_format($data['diagramone']['00020000000000000000']['fulfilled'], 1, ',', ' '); ?></span>
                                         </li>
                                      
                                 </ul>

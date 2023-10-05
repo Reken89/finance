@@ -2,6 +2,11 @@ $(function() {
     "use strict";
 
 // chart 20
+var title01 = $('div.hidden').data('title01');
+var title02 = $('div.hidden').data('title02');
+var fulfilled01 = $('div.hidden').data('fulfilled01');
+var fulfilled02 = $('div.hidden').data('fulfilled02');
+
 var ctx = document.getElementById("chart20").getContext('2d');
 
 var gradientStroke1 = ctx.createLinearGradient(0, 0, 0, 300);
@@ -15,7 +20,7 @@ var gradientStroke2 = ctx.createLinearGradient(0, 0, 0, 300);
 var myChart = new Chart(ctx, {
     type: 'pie',
     data: {
-        labels: ["Безвозмездные поступления", "Налоговые и неналоговые"],
+        labels: [title02, title01],
         datasets: [{
             backgroundColor: [
                 gradientStroke1,
@@ -27,7 +32,7 @@ var myChart = new Chart(ctx, {
                 gradientStroke2
             ],
 
-            data: [70, 50],
+            data: [fulfilled02, fulfilled01],
             borderWidth: [1, 1]
         }]
     },

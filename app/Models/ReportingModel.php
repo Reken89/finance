@@ -27,6 +27,27 @@ class ReportingModel extends BaseModel
         $row = $stmt->fetch(PDO::FETCH_ASSOC);
         return $row;
 
-    }    
+    }  
+    
+    public function diagram(string $meaning, int $year, array $kbk, int $limit)
+    {
+        $code = implode(",",$kbk);
+        
+        $sql = "SELECT id, mounth, title, kbk, fulfilled FROM reporting "
+            . "WHERE meaning = '$meaning' AND year = '$year' AND kbk IN($code) "
+            . "ORDER BY mounth DESC LIMIT $limit";
+      
+        $res = [];
+        $stmt = $this->db->prepare($sql);
+        $stmt->execute();
+        while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+            $row['fulfilled'] = round($row['fulfilled'] / 1000, 1);
+            $row['title'] = mb_strtolower($row['title']);
+            $res[$row['kbk']] = $row;
+        }
+        //$row = $stmt->fetch(PDO::FETCH_ASSOC);
+        
+        return $res;       
+    }
 }
 
