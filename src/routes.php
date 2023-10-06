@@ -3,6 +3,7 @@
 use App\Controllers\IndexController;
 use App\Controllers\IncomeController;
 use App\Controllers\ExpensesController;
+use App\Controllers\DutyController;
 
 $route = explode("/", $_SERVER['REQUEST_URI']);     
 $route = str_replace(".php", "", $route);
@@ -23,7 +24,12 @@ if($route[2] == "index" || $route[2] == ""){
 }elseif ($route[2] == "expenses") {
     $route = new ExpensesController;
     $route->index();
-}
+
+//Страница с Долгами   
+}elseif ($route[2] == "duty") {
+    $route = new DutyController;
+    $route->index();
+}    
 
 
 
