@@ -7,6 +7,13 @@ use App\Models\ReportingModel;
 
 class IncomeModel extends BaseModel
 {
+    /**
+     * Возвращаем массив содержащий информацию
+     * по круговым диаграммам Доходы
+     *
+     * @param string $diagram
+     * @return array
+     */
     public function diagram(string $diagram)
     {
         if($diagram == "one"){

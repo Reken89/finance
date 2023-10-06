@@ -12,7 +12,7 @@ class ReportingModel extends BaseModel
      * Получаем только итоговое значение по kbk = no
      * Получаем либо расходы, либо доходы, в зависимости от запроса
      *
-     * @param string $meaning, int $year
+     * @param string string $meaning, int $year, string $kbk
      * @return array
      */
     public function block(string $meaning, int $year, string $kbk)
@@ -29,6 +29,14 @@ class ReportingModel extends BaseModel
 
     }  
     
+    /**
+     * Получаем информацию из таблицы reporting
+     * Получаем значения по kbk
+     * Получаем либо расходы, либо доходы, в зависимости от запроса
+     *
+     * @string $meaning, int $year, array $kbk, int $limit
+     * @return array
+     */
     public function diagram(string $meaning, int $year, array $kbk, int $limit)
     {
         $code = implode(",",$kbk);
@@ -46,7 +54,6 @@ class ReportingModel extends BaseModel
             $row['title'] = mb_strimwidth($row['title'], 0, 65, '...');
             $res[$row['kbk']] = $row;
         }
-        //$row = $stmt->fetch(PDO::FETCH_ASSOC);
         
         return $res;       
     }
