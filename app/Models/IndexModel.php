@@ -5,6 +5,7 @@ namespace App\Models;
 use App\Models\BaseModel;
 use App\Models\ReportingModel;
 use App\Models\PlanModel;
+use App\Models\DebtModel;
 
 class IndexModel extends BaseModel
 {
@@ -169,9 +170,22 @@ class IndexModel extends BaseModel
             ];
             return $result;
             
-        }
-
+        }       
+    }
+    
+    /**
+     * Возвращаем массив содержащий информацию
+     * по четвертому блоку сайта
+     *
+     * @param 
+     * @return array
+     */
+    public function fourblock()
+    {
+        $object = new DebtModel();
+        $result = $object->block(2023);
         
+        return $result;
     }
     
 }
