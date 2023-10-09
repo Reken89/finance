@@ -4,6 +4,7 @@ use App\Controllers\IndexController;
 use App\Controllers\IncomeController;
 use App\Controllers\ExpensesController;
 use App\Controllers\DutyController;
+use App\Controllers\ContactController;
 
 $route = explode("/", $_SERVER['REQUEST_URI']);     
 $route = str_replace(".php", "", $route);
@@ -29,8 +30,9 @@ if($route[2] == "index" || $route[2] == ""){
 }elseif ($route[2] == "duty") {
     $route = new DutyController;
     $route->index();
-}    
 
-
-
-
+//Страница Контакты
+}elseif ($route[2] == "contacts") {
+    $route = new ContactController;
+    $route->index(); 
+}
