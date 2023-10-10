@@ -1,16 +1,16 @@
 $(function() {
     "use strict";
+    
+// chart 50
+var point10 = $('div.hidden').data('point10');
+var point20 = $('div.hidden').data('point20');
+var point30 = $('div.hidden').data('point30');
+var point40 = $('div.hidden').data('point40');
 
-// chart 40
-var point01 = $('div.hidden').data('point01');
-var point02 = $('div.hidden').data('point02');
-var point03 = $('div.hidden').data('point03');
-var point04 = $('div.hidden').data('point04');
-
-var ctx = document.getElementById('chart40').getContext('2d');
+var ctx = document.getElementById('chart50').getContext('2d');
  
 var gradientStroke1 = ctx.createLinearGradient(0, 0, 0, 300);
-    gradientStroke1.addColorStop(0, '#008cff');
+    gradientStroke1.addColorStop(0, '#00FF7F');
     gradientStroke1.addColorStop(1, 'rgba(22, 195, 233, 0.1)');
 
     var myChart = new Chart(ctx, {
@@ -19,7 +19,7 @@ var gradientStroke1 = ctx.createLinearGradient(0, 0, 0, 300);
             labels: ['2020', '2021', '2022', '2023'],
             datasets: [{
                 label: 'Профицит',
-                data: [point01, point02, point03, point04],
+                data: [point10, point20, point30, point40],
                 lineTension: 0,
                 pointBorderWidth: 2,
                 pointHoverBackgroundColor: gradientStroke1,
@@ -44,18 +44,18 @@ var gradientStroke1 = ctx.createLinearGradient(0, 0, 0, 300);
                 caretPadding: 10
             }
         }
-    });
-       
-// chart 41
-var point001 = $('div.hidden').data('point001');
-var point002 = $('div.hidden').data('point002');
-var point003 = $('div.hidden').data('point003');
-var point004 = $('div.hidden').data('point004');
+    });    
+    
+// chart 51
+var point100 = $('div.hidden').data('point100');
+var point200 = $('div.hidden').data('point200');
+var point300 = $('div.hidden').data('point300');
+var point400 = $('div.hidden').data('point400');
 
-var ctx = document.getElementById('chart41').getContext('2d');
+var ctx = document.getElementById('chart51').getContext('2d');
  
 var gradientStroke1 = ctx.createLinearGradient(0, 0, 0, 300);
-    gradientStroke1.addColorStop(0, '#008cff');
+    gradientStroke1.addColorStop(0, '#00FF7F');
     gradientStroke1.addColorStop(1, 'rgba(22, 195, 233, 0.1)');
 
     var myChart = new Chart(ctx, {
@@ -64,7 +64,7 @@ var gradientStroke1 = ctx.createLinearGradient(0, 0, 0, 300);
             labels: ['2020', '2021', '2022', '2023'],
             datasets: [{
                 label: 'Профицит',
-                data: [point001, point002, point003, point004],
+                data: [point100, point200, point300, point400],
                 lineTension: 0,
                 pointBorderWidth: 2,
                 pointHoverBackgroundColor: gradientStroke1,
@@ -89,11 +89,7 @@ var gradientStroke1 = ctx.createLinearGradient(0, 0, 0, 300);
                 caretPadding: 10
             }
         }
-    });        
-	  
-});	
-
-
-
-
+    });    
+    
+});    
 

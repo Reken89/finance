@@ -2,15 +2,16 @@
 ?>
 <div
     class='hidden'   
-    data-point01='<?= $data['dynamics2020'] ?>'
-    data-point02='<?= $data['dynamics2021'] ?>'
-    data-point03='<?= $data['dynamics2022'] ?>'
-    data-point04='<?= $data['dynamics2023'] ?>'   
+     
+    data-point10='<?= $data['vector']['2020']['servmundeb'] ?>'
+    data-point20='<?= $data['vector']['2021']['servmundeb'] ?>'
+    data-point30='<?= $data['vector']['2022']['servmundeb'] ?>'
+    data-point40='<?= $data['vector']['2023']['servmundeb'] ?>'
     
-    data-point001='<?= $data['vector']['2020']['mundeb'] ?>'
-    data-point002='<?= $data['vector']['2021']['mundeb'] ?>'
-    data-point003='<?= $data['vector']['2022']['mundeb'] ?>'
-    data-point004='<?= $data['vector']['2023']['mundeb'] ?>'
+    data-point100='<?= $data['vector']['2020']['bank'] ?>'
+    data-point200='<?= $data['vector']['2021']['bank'] ?>'
+    data-point300='<?= $data['vector']['2022']['bank'] ?>'
+    data-point400='<?= $data['vector']['2023']['bank'] ?>'
 ></div>
 <!doctype html>
 <html lang="en">
@@ -34,27 +35,27 @@
                         <div class="col d-flex">
                             <div class="card radius-10 w-100">
                                 <div class="card-body">
-                                    <p class="font-weight-bold mb-1 text-secondary">Динамика сбалансированности бюджета</p>
+                                    <p class="font-weight-bold mb-1 text-secondary">Обслуживание муниципального долга</p>
                                     
                                     <div class="chart-container-0">
-                                        <canvas id="chart40"></canvas>
+                                        <canvas id="chart50"></canvas>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div>  
                         <div class="col d-flex">
                             <div class="card radius-10 w-100">
                                 <div class="card-body">
-                                    <p class="font-weight-bold mb-1 text-secondary">Муниципальный долг бюджета</p>
+                                    <p class="font-weight-bold mb-1 text-secondary">Размер ключевой ставки</p>
                                     
                                     <div class="chart-container-0">
-                                        <canvas id="chart41"></canvas>
+                                        <canvas id="chart51"></canvas>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> 
                     </div>  
-                </div>                           
+                </div>                                          
             </div>
 
             <footer class="page-footer">
@@ -70,4 +71,6 @@
     
 </body>
 </html>
+
+
 

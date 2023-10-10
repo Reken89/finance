@@ -30,6 +30,11 @@ if($route[2] == "index" || $route[2] == ""){
 }elseif ($route[2] == "duty") {
     $route = new DutyController;
     $route->index();
+    
+//Страница с обслуживанием муниципального долга  
+}elseif ($route[2] == "servduty") {
+    $route = new DutyController;
+    $route->serv();    
 
 //Страница Контакты
 }elseif ($route[2] == "contacts") {
