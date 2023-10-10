@@ -22,8 +22,7 @@
                                 <table class="table table-striped table-hover table-sm mb-0">
                                     <thead>
                                         <tr>
-                                            <th>Документ 
-                                            </th>
+                                            <th>Документы</th>
                                             <th>Год</th>
                                         </tr>
                                     </thead>
