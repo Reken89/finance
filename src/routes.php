@@ -41,6 +41,11 @@ if($route[2] == "index" || $route[2] == ""){
 }elseif ($route[2] == "solution") {
     $route = new BudgetController;
     $route->solution();
+    
+//Страница с проектом бюджета
+}elseif ($route[2] == "project") {
+    $route = new BudgetController;
+    $route->project();    
 
 //Страница Контакты
 }elseif ($route[2] == "contacts") {

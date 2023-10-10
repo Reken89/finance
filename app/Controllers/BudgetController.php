@@ -26,4 +26,21 @@ class BudgetController extends BaseController
         $this->view->render($this->page, $this->data);
     }
     
+    /**
+     * Возвращаем информацию из БД
+     * для отображения на сайте
+     * Возвращаем нужный шаблон для отрисовки страницы
+     * Решение бюджета
+     *
+     * @param 
+     * @return render()
+     */
+    public function project()
+    {
+        $this->data = [];
+        $this->page = "/views/project.php";
+
+        $this->view->render($this->page, $this->data);
+    }
+    
 }
