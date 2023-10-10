@@ -12,6 +12,11 @@
     data-point200='<?= $data['vector']['2021']['bank'] ?>'
     data-point300='<?= $data['vector']['2022']['bank'] ?>'
     data-point400='<?= $data['vector']['2023']['bank'] ?>'
+    
+    data-point01='<?= $data['vector']['2020']['credit'] ?>'
+    data-point02='<?= $data['vector']['2021']['credit'] ?>'
+    data-point03='<?= $data['vector']['2022']['credit'] ?>'
+    data-point04='<?= $data['vector']['2023']['credit'] ?>'
 ></div>
 <!doctype html>
 <html lang="en">
@@ -50,6 +55,17 @@
                                     
                                     <div class="chart-container-0">
                                         <canvas id="chart51"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col d-flex">
+                            <div class="card radius-10 w-100">
+                                <div class="card-body">
+                                    <p class="font-weight-bold mb-1 text-secondary">Размер максимальной процентной ставки, привлекаемых кредитов</p>
+                                    
+                                    <div class="chart-container-0">
+                                        <canvas id="chart52"></canvas>
                                     </div>
                                 </div>
                             </div>
