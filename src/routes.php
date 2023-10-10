@@ -5,6 +5,7 @@ use App\Controllers\IncomeController;
 use App\Controllers\ExpensesController;
 use App\Controllers\DutyController;
 use App\Controllers\ContactController;
+use App\Controllers\BudgetController;
 
 $route = explode("/", $_SERVER['REQUEST_URI']);     
 $route = str_replace(".php", "", $route);
@@ -34,7 +35,12 @@ if($route[2] == "index" || $route[2] == ""){
 //Страница с обслуживанием муниципального долга  
 }elseif ($route[2] == "servduty") {
     $route = new DutyController;
-    $route->serv();    
+    $route->serv();  
+    
+//Страница с решением бюджета
+}elseif ($route[2] == "solution") {
+    $route = new BudgetController;
+    $route->solution();
 
 //Страница Контакты
 }elseif ($route[2] == "contacts") {
