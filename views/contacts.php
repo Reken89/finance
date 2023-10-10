@@ -24,7 +24,7 @@
                                     <div class="mt-3">
                                         <h4>Финансово-экономическое управление</h4>
                                         <p class="text-secondary mb-1">Email: finanse@kostamail.ru</p>
-                                        <p class="text-muted font-size-sm">Телефон: (777) 888-88888</p>
+                                        <p class="text-muted font-size-sm">Телефон: 8 911 662 5354</p>
                                     </div>
                                 </div>
                             </div>
@@ -38,7 +38,7 @@
                                         <h6 class="mb-0">Учреждение</h6>
                                     </div>
                                     <div class="col-sm-9 text-secondary">
-                                         <input type="text" class="form-control" value="Администрация Костомукшского городского округа" />
+                                         <p class="text-secondary mb-1">Администрация Костомукшского городского округа</p>
                                     </div>
                                 </div>
                                 <div class="row mb-3">
@@ -46,7 +46,7 @@
                                         <h6 class="mb-0">Email</h6>
                                     </div>
                                     <div class="col-sm-9 text-secondary">
-                                        <input type="text" class="form-control" value="adm-kos@msu.kostomuksha-rk.ru" />
+                                        <p class="text-secondary mb-1">finanse@kostamail.ru</p>
                                     </div>
                                 </div>
                                 <div class="row mb-3">
@@ -54,7 +54,7 @@
                                         <h6 class="mb-0">Телефон</h6>
                                     </div>
                                     <div class="col-sm-9 text-secondary">
-                                        <input type="text" class="form-control" value="(777) 888-88888" />
+                                        <p class="text-secondary mb-1">Начальник финансово-экономического управления: 8 911 662 5354</p>
                                     </div>
                                 </div>
                                 <div class="row mb-3">
@@ -62,7 +62,15 @@
                                         <h6 class="mb-0">Телефон</h6>
                                     </div>
                                     <div class="col-sm-9 text-secondary">
-                                        <input type="text" class="form-control" value="(777) 888-88888" />
+                                        <p class="text-secondary mb-1">Начальник отдела по формированию бюджета: 8 911 662 5352</p>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-sm-3">
+                                        <h6 class="mb-0">Телефон</h6>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                        <p class="text-secondary mb-1">Начальник отдела по исполнению бюджета: 8 911 430 2570</p>
                                     </div>
                                 </div>
                                 <div class="row mb-3">
@@ -70,7 +78,7 @@
                                         <h6 class="mb-0">Адрес</h6>
                                     </div>
                                     <div class="col-sm-9 text-secondary">
-                                        <input type="text" class="form-control" value="г.Костомукша ул.Строителей д.5" />
+                                        <p class="text-secondary mb-1">г. Костомукша ул. Калевала д.13</p>
                                     </div>
                                 </div>
                             </div>

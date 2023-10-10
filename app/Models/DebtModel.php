@@ -17,7 +17,7 @@ class DebtModel extends BaseModel
      */
     public function block(int $year)
     {        
-        $sql = "SELECT id, mounth, servmundeb, maxmunded FROM mundebts "
+        $sql = "SELECT id, mounth, mundeb, servmundeb FROM mundebts "
             . "WHERE year = '$year' AND servmundeb != 0 "
             . "ORDER BY mounth DESC LIMIT 1";
         
