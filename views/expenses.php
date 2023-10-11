@@ -69,12 +69,12 @@ $date = [
                                 </div>
                             </div>
                             <div class="card-body">
-                                    <div class="chart-container-1">
-                                            <canvas id="chart30"></canvas>
-                                      </div>
+                                <div class="chart-container-500">
+                                    <canvas id="chart30"></canvas>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </div>                    
                 </div>              
             </div>
 

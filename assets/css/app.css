@@ -1347,6 +1347,11 @@ a {
     right: 30px;
 }
 
+.chart-container-500{
+	position:relative;
+	height:500px;
+}
+
 .chart-container-0{
 	position:relative;
 	height:320px;
