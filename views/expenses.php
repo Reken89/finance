@@ -75,7 +75,7 @@ $date = [
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-6">
+                    <div class="col-12 col-lg-8">
                         <div class="card radius-10 w-100">
                             <div class="card-header bg-transparent">
                                 <div class="d-flex align-items-center">
