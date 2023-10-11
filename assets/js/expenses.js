@@ -121,6 +121,77 @@ var myChart = new Chart(ctx, {
     }
 });
 
+// chart 31
+Highcharts.chart('chart31', {
+    chart: {
+        plotBackgroundColor: null,
+        plotBorderWidth: null,
+        plotShadow: false,
+        type: 'pie',
+        styledMode: true
+    },
+    credits: {
+        enabled: false
+    },
+    title: {
+        text: ''
+    },
+    tooltip: {
+        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+    },
+    accessibility: {
+        point: {
+                valueSuffix: '%'
+        }
+    },
+    plotOptions: {
+        pie: {
+            allowPointSelect: true,
+            cursor: 'pointer',
+            dataLabels: {
+                    enabled: true,
+                    format: '<b>{point.name}</b>: {point.percentage:.1f} %'
+            }
+        }
+    },
+    series: [{
+        name: 'Brands',
+        colorByPoint: true,
+        data: [{
+                name: title05,
+                y: fulfilled05,
+                sliced: true,
+                selected: true
+        }, {
+                name: title01,
+                y: fulfilled01
+        }, {
+                name: title02,
+                y: fulfilled02
+        }, {
+                name: title03,
+                y: fulfilled03
+        }, {
+                name: title04,
+                y: fulfilled04
+        }, {
+                name: title06,
+                y: fulfilled06
+        }, {
+                name: title07,
+                y: fulfilled07
+        }, {
+                name: title08,
+                y: fulfilled08
+        }, {
+                name: title09,
+                y: fulfilled09
+        }, {
+                name: title10,
+                y: fulfilled10
+        }]
+    }]
+});
 	  
 });	
 

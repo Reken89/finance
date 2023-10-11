@@ -74,8 +74,26 @@ $date = [
                                 </div>
                             </div>
                         </div>
-                    </div>                    
-                </div>              
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="card radius-10 w-100">
+                            <div class="card-header bg-transparent">
+                                <div class="d-flex align-items-center">
+                                    <div>
+                                        <h6 class="mb-0">Структура расходов на <?php echo $date[$data['diagramone']['00001000000000000000']['mounth']]; ?></h6>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="card-body">
+                            <div class="chart-container-500">
+                                <div class="chart-container-500" id="chart31"></div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>  
+                </div>  
+                
             </div>
 
             <footer class="page-footer">
