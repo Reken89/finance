@@ -136,7 +136,7 @@ $date = [
 							   <div>
 								   <p class="mb-0 text-secondary">Муниципальный долг на <?php echo $date[$data['fourblock']['mounth']]; ?></p>
 								   <h4 class="my-1 text-warning"><?php echo number_format($data['fourblock']['mundeb'], 1, ',', ' '); ?> Тыс/Руб</h4>
-								   <p class="mb-0 font-13"><?php echo number_format($data['fourblock']['servmundeb'], 1, ',', ' '); ?> % от годового плана</p>
+								   <p class="mb-0 font-13"><?php echo number_format($data['fourblock']['servmundeb'], 1, ',', ' '); ?> обслуживание мун.долга (%)</p>
 							   </div>
 							   <div class="widgets-icons-2 rounded-circle bg-gradient-blooker text-white ms-auto">
 							   </div>

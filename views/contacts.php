@@ -54,7 +54,7 @@
                                         <h6 class="mb-0">Телефон</h6>
                                     </div>
                                     <div class="col-sm-9 text-secondary">
-                                        <p class="text-secondary mb-1">Начальник финансово-экономического управления: 8 911 662 5354</p>
+                                        <p class="text-secondary mb-1">Зам.главы администрации по экономике и финансам: 8 911 662 5354</p>
                                     </div>
                                 </div>
                                 <div class="row mb-3">

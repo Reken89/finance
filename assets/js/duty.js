@@ -63,7 +63,7 @@ var gradientStroke1 = ctx.createLinearGradient(0, 0, 0, 300);
         data: {
             labels: ['2020', '2021', '2022', '2023'],
             datasets: [{
-                label: 'Профицит',
+                label: 'Значение',
                 data: [point001, point002, point003, point004],
                 lineTension: 0,
                 pointBorderWidth: 2,
