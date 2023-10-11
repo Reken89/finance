@@ -35,7 +35,7 @@
                                                     <div class="font-weight-bold text-danger"><a href="/finance/file/Проект Бюджета на 2023-2025гг.pdf" download>Проект Бюджета на 2023-2025гг.</a></div>
                                                 </div>
                                             </td>
-                                            <td>----</td>
+                                            <td>2023-2025гг.</td>
                                         </tr>                                      
                                     </tbody>
                                 </table>
