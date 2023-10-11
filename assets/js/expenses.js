@@ -136,9 +136,9 @@ Highcharts.chart('chart31', {
     title: {
         text: ''
     },
-    tooltip: {
-        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-    },
+    //tooltip: {
+    //    pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+    //},
     accessibility: {
         point: {
                 valueSuffix: '%'
@@ -155,7 +155,7 @@ Highcharts.chart('chart31', {
         }
     },
     series: [{
-        name: 'Процент',
+        name: 'Значение',
         colorByPoint: true,
         data: [{
                 name: title05,
