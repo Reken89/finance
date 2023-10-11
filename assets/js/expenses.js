@@ -155,7 +155,7 @@ Highcharts.chart('chart31', {
         }
     },
     series: [{
-        name: 'Brands',
+        name: 'Процент',
         colorByPoint: true,
         data: [{
                 name: title05,
