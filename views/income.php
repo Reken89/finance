@@ -99,7 +99,7 @@ $date = [
                         </div>
                     </div>
                     
-                    <div class="col-12 col-lg-4">
+                    <div class="col-12 col-lg-8">
                         <div class="card radius-10 w-100">
                             <div class="card-header bg-transparent">
                                 <div class="d-flex align-items-center">
@@ -111,7 +111,7 @@ $date = [
                             </div>
                                 <div class="card-body">
                                         <div class="chart-container-500">
-                                                <canvas id="chart21"></canvas>
+                                                <div class="chart-container-500" id="chart22"></div>
                                           </div>
                                 </div>                               
                         </div>

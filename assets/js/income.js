@@ -83,6 +83,7 @@ var fulfilled012 = $('div.hidden').data('fulfilled012');
 var fulfilled013 = $('div.hidden').data('fulfilled013');
 var fulfilled014 = $('div.hidden').data('fulfilled014');
 
+/*
 var ctx = document.getElementById("chart21").getContext('2d');
 
 var gradientStroke1 = ctx.createLinearGradient(0, 0, 0, 300);
@@ -204,6 +205,92 @@ var myChart = new Chart(ctx, {
             displayColors:false,
         },
     }
+});
+      
+ */
+
+// chart 22
+Highcharts.chart('chart22', {
+    chart: {
+        plotBackgroundColor: null,
+        plotBorderWidth: null,
+        plotShadow: false,
+        type: 'pie',
+        styledMode: true
+    },
+    credits: {
+        enabled: false
+    },
+    title: {
+        text: ''
+    },
+    //tooltip: {
+    //    pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+    //},
+    accessibility: {
+        point: {
+                valueSuffix: '%'
+        }
+    },
+    plotOptions: {
+        pie: {
+            allowPointSelect: true,
+            cursor: 'pointer',
+            dataLabels: {
+                    enabled: true,
+                    format: '<b>{point.name}</b>: {point.percentage:.1f} %'
+            }
+        }
+    },
+    series: [{
+        name: 'Значение',
+        colorByPoint: true,
+        data: [{
+                name: title013,
+                y: fulfilled013,
+                sliced: true,
+                selected: true
+        }, {
+                name: title001,
+                y: fulfilled001
+        }, {
+                name: title002,
+                y: fulfilled002
+        }, {
+                name: title003,
+                y: fulfilled003
+        }, {
+                name: title004,
+                y: fulfilled004
+        }, {
+                name: title005,
+                y: fulfilled005
+        }, {
+                name: title006,
+                y: fulfilled006
+        }, {
+                name: title007,
+                y: fulfilled007
+        }, {
+                name: title008,
+                y: fulfilled008
+        }, {
+                name: title014,
+                y: fulfilled014
+        }, {
+                name: title010,
+                y: fulfilled010
+        }, {
+                name: title011,
+                y: fulfilled011
+        }, {
+                name: title012,
+                y: fulfilled012
+        }, {
+                name: title009,
+                y: fulfilled009
+        }]
+    }]
 });
 	  
 });	 
