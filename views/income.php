@@ -85,7 +85,7 @@ $date = [
                                 </div>
                             </div>
                                 <div class="card-body">
-                                        <div class="chart-container-500">
+                                        <div class="chart-container-0">
                                                 <canvas id="chart20"></canvas>
                                           </div>
                                 </div>
