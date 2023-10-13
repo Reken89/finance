@@ -6,6 +6,7 @@ use App\Controllers\ExpensesController;
 use App\Controllers\DutyController;
 use App\Controllers\ContactController;
 use App\Controllers\BudgetController;
+use App\Controllers\MbtController;
 
 $route = explode("/", $_SERVER['REQUEST_URI']);     
 $route = str_replace(".php", "", $route);
@@ -45,7 +46,12 @@ if($route[2] == "index" || $route[2] == ""){
 //Страница с проектом бюджета
 }elseif ($route[2] == "project") {
     $route = new BudgetController;
-    $route->project();    
+    $route->project();
+
+//Страница с исполнением МБТ
+}elseif ($route[2] == "mbt") {
+    $route = new MbtController;
+    $route->index();     
 
 //Страница Контакты
 }elseif ($route[2] == "contacts") {
