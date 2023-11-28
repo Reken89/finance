@@ -7,8 +7,8 @@ session_start();
 require_once __DIR__ . '/vendor/autoload.php';
 
 //Перенаправляем в роутинг
-require_once 'src/routes.php';
+//require_once 'src/routes.php';
 
 //Временная заглушка
-//require_once 'views/stop.php';
+require_once 'views/stop.php';
 
