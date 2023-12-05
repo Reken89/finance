@@ -15,7 +15,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 	<link href="assets/css/app.css" rel="stylesheet">
 	<link href="assets/css/icons.css" rel="stylesheet">
-	<title>Временная заглушка</title>
+	<title>Стоп лист!</title>
 </head>
 
 <body>
@@ -29,9 +29,8 @@
 						<div class="col-xl-5">
 							<div class="card-body p-4">
 								
-								<h2 class="font-weight-bold display-4">Стоп лист</h2>
-                                                                <p>Сайт временно <u>приостановлен!</u>
-                                                                    <br>В связи с экономией ресурсов WEB сервера, и в связи с изменением структуры сайта</p>
+								<h2 class="font-weight-bold display-4">Сайт не доступен</h2>
+                                                                <p><b>В связи с прекращением разработки...</b></p>
 								<div class="mt-5">	<a href="#" class="btn btn-lg btn-primary px-md-5 radius-30">Перезагрузить</a>
 									
 								</div>
